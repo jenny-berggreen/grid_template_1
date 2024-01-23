@@ -1,0 +1,48 @@
+.container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+  	grid-template-rows: 0.4fr 1.5fr 1.2fr 0.8fr;
+	grid-template-areas: 
+	"nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+	
+}
+
+nav {
+	grid-area: nav;
+	background-color: var(--color-nav);
+}
+
+main {
+	grid-area: main;
+	background-color: var(--color-main);
+}
+
+#sidebar {
+	grid-area: sidebar;
+	background-color: var(--color-sidebar);
+}
+
+#content1 {
+	grid-area: content1;
+	background-color: var(--color-content);
+}
+
+#content2 {
+	grid-area: content2;
+	background-color: var(--color-content);
+}
+
+#content3 {
+	grid-area: content3;
+	background-color: var(--color-content);
+}
+
+footer {
+	grid-area: footer;
+	background-color: var(--color-footer);
+}
+
