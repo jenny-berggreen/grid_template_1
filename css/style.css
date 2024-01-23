@@ -1,4 +1,4 @@
-.container {
+.grid-container {
 	display: grid;
 	height: 100vh;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -8,7 +8,13 @@
     "sidebar main main main"
     "sidebar content1 content2 content3"
     "sidebar footer footer footer";
-	
+	gap: 0.5rem;
+}
+
+.grid-item {
+	border-radius: var(--border-radius);
+	text-align: center;
+	padding-top: var(--spacing-small);
 }
 
 nav {
